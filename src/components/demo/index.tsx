@@ -1,5 +1,8 @@
 import logo from '../../logo.svg';
+import { Button } from 'antd'
+import { useNavigate } from 'react-router-dom';
 const Demo = () => {
+  const navigate = useNavigate()
   return (
     <div className="App">
       <header className="App-header">
@@ -15,6 +18,7 @@ const Demo = () => {
         >
           Learn React
         </a>
+        <Button type="primary" onClick={() => { navigate(-1) }}>返回</Button>
       </header>
     </div>
   )
