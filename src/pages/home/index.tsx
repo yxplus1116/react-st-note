@@ -96,6 +96,9 @@ const Home: React.FC = () => {
       }>
         <Button type='primary' >404</Button>
       </Link>
+      <Link style={{ margin: '0 10px' }} to={'/todoList'}>
+        <Button type='primary' >todoList</Button>
+      </Link>
     </div>
   );
 };
